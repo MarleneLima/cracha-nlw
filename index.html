@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marlene de Lima - DoWhile 2021</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  
+  </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/selo.svg" alt="Selo Rocketseat" />
+          </span>
+          <img src="images/Mar.jpg" alt="Foto pessoal"  id="userImage"/>
+        </div>
+
+        <h1 id="userName">Marlene de Lima</h1>
+        <a id="userLink" href="https://github.com/MarleneLima" target="blank">
+          <img src="images/github.svg" alt="ícone github" /> 
+          <span id="userLogin">MarleneLima</span> 
+        </a>
+
+        <p id="userBio">Advogada em transição de carreira para Front-end</p>
+
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="" target="blank"></a>
+            <img src="images/youtube.svg" alt="ícone Youtube" />
+          </li>
+          
+          <li class="instagram">
+            <a href="https://www.instagram.com/marlene.rlp/" target="blank">
+              <img
+                src="images/instagram.svg"
+                alt="ícone Instagram"
+              />
+            </a>
+          </li>
+
+          <li class="facebook">
+            <a href="https://www.facebook.com/marlene.rodrigues.54" target="blank">
+              <img
+                src="images/facebook.svg"
+                alt="ícone Facebook"
+              />
+            </a>
+          </li>
+
+          <li class="twitter">
+            <a href="" target="blank"></a>
+            <img src="images/twitter.svg" alt="ícone Twitter" />
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
+
+<!--
+
+ INFORMAÇÕES IMPORTANTES 
+
+  Funções repetitivas
+
+  function changeSocialMediaLinks() {
+    for (let i = 0; i <= 10; i++) {
+      alert(i)
+    }
+
+    for(let li of socialLinks.children) Forma do JS utilizar o "li"
+  }
+  ----------------------------------------------------------------
+    for(let li of socialLinks.children) {
+      alert(li.getAttribute('class'))   Forma de aparecer as redes sociais da "li"
+      ou
+      const social = li.getAttribute('class')
+      alert(social)
+    }
+    -------------------------------------------------------------
+    Para trocar uma rede por outra 
+    function changeSocialMediaLinks(){
+      li.children[0].href = "https://www.instagram.com/sabrina" 
+
+    Para trocar a rede social sem ficar no loop quando tem mais de uma
+    function changeSocialMediaLinks(){
+      for (let li of socialLinks.children) {
+        const social = li.getAttribute('class')
+        li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+        alert(li.children[0].href)
+      }
+    }
+      changeSocialMediaLinks()
+    ------------------------------------------------------------- 
+
+      alert(li.children[0].href) demonstração da funcionalidade
+    }
+    -------------------------------------------------------------
+  function showMeSomething(texto){
+        alert (texto)
+      }
+  const links = {
+    
+    github: "MarleneLima",
+    facebook: "marlene.rodrigues.54",
+    instagram: "marlene.rlp"
+  }
+  showMeSomething(links.github)
+
+  ----------------------------------------------------------------
+  Para trocar algo
+
+  function "changenomequalquer"(){
+    userName.textContent = 'novo nome'
+  }
+  changenomequalquer()
+-->
